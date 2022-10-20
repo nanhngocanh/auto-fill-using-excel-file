@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Export Excel form template</label>
+      <br />
+      <button class="btn btn-secondary" (click)="exportToExcel()">
+        <i class="bi bi-download"></i>Export File
+      </button>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="form-group">
+      <label>Upload Excel form</label>
+      <input
+        type="file"
+        class="form-control"
+        (change)="addfile($event)"
+        placeholder="Upload file"
+        accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+      />
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <label>Name</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.name"
+    />
+  </div>
+  <div class="col-md-4">
+    <label>Age</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.age"
+    />
+  </div>
+  <div class="col-md-4">
+    <label>Phone number</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.phone"
+    />
+  </div>
+  <div class="col-md-4">
+    <label>Email</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.email"
+    />
+  </div>
+  <div class="col-md-4">
+    <label>Facebook</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.facebook"
+    />
+  </div>
+  <div class="col-md-4">
+    <label>Address</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder=""
+      [(ngModel)]="formEx.address"
+    />
+  </div>
+</div>

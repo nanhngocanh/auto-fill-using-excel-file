@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+label {
+  margin-top: 1em;
+}
+i {
+  margin-right: 0.5em;
+}
